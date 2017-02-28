@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>magaz</title>
+
+  <link href="css/style.css" rel="stylesheet">
+ <!-- <link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <script src="js/template.js" id="persona-id"></script>
+  <!--<script type="text/template" id="persona-id">
+    <%=name %> ( <%= age%> ) - <%= job %>
+</script>-->
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div id="menu"> <!-- Блок меню -->
+        <ul>
+          <li><a href="#!/">Start</a></li>
+          <li><a href="#!/success">Success</a></li>
+          <li><a href="#!/error">Error</a></li>
+          <li><a href="#!/page/55">test</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Hello, world!</h1>
+  <div id="start" class="block">
+    <div class="userplace">
+      <label for="username">Имя пользователя: </label>
+      <input type="text" id="username" />
+    </div>
+    <div class="buttonplace">
+      <input type="button" value="Проверить" />
+    </div>
+  </div>
+  <div id="error" class="block">
+    Ошибка такой пользователь не найден.
+  </div>
+  <div id="success" class="block">
+    Пользователь найден.
+  </div>
+  <form action="" id="addTask">
+    <label for="title">name new task</label>
+    <input type="text" required id="title" placeholder="new task">
+    <label for="priority">priority</label>
+    <input type="number" id="priority" required placeholder="priority">
+    <input type="submit" value="add task">
+  </form>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/underscore/underscore-min.js"></script>
+<script src="js/backbone/backbone.js"></script>
+
+
+<script src="js/my.js"></script>
+</body>
+</html>
